@@ -12,7 +12,18 @@
 <body>
 
     <section id="corpo1">
-        <img src="interactive-card-details-form-main/images/bg-main-desktop.png" alt="">
+        <img src="interactive-card-details-form-main/images/bg-main-desktop.png" alt="" id="background_img">
+        <div class="images_section">
+            <div id="front">
+
+                <img src="interactive-card-details-form-main/images/bg-card-front.png" alt="">
+            </div>
+            <div id="back">
+                <img src="interactive-card-details-form-main/images/bg-card-back.png" alt="">
+            
+            </div>
+
+        </div>
     </section>
     <section id="corpo2">
         <form>
@@ -29,15 +40,17 @@
             <div class="dateCvc">
                 <label for="date">EXP.DATE (MM/YY)
                     <div id="dateCont">
-                        <input type="number" name="" class="date campos" placeholder="MM">
-                        <input type="number" name="" class="date campos" placeholder="YY">
+                        <input type="number" name="" class="date campos" placeholder="MM" maxlength="2" max="12"
+                            min="01">
+                        <input type="number" name="" class="date campos" placeholder="YY" maxlength="2" max="99"
+                            min="01">
                     </div>
                 </label>
                 <label for="cvc">CVC
                     <input type="number" name="cvc" class="cvc campos" placeholder="e.g.124">
                 </label>
             </div>
-            <input type="button" value="" class="campos">
+            <button class="campos btn">Confirm</button>
 
         </form>
     </section>
