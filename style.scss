@@ -1,3 +1,5 @@
+$primary-gray: hsl(270, 3%, 87%);
+
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 
 @mixin fonts($font_input: font) {
@@ -7,10 +9,11 @@
   font-size: 18px;
 }
 
-@mixin display($display_config: display){
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin display($display_config: display) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 
 body {
@@ -31,17 +34,49 @@ body {
     width: 65%;
     height: 100%;
     background-color: #fff;
-   @include display($display_config:display);
+    @include display($display_config: display);
     form {
-      width: 50%;
+      width: 35%;
       height: 60%;
-      @include display($display_config:display);
+      @include display($display_config: display);
+      align-items: flex-start;
+      justify-content: space-evenly;
       flex-direction: column;
       background-color: aqua;
       @include fonts($font_input: font);
       .campos {
         @include fonts($font_input: font);
-        color: hsl(270, 3%, 87%);
+        color: $primary-gray;
+        @include display($display_config: display);
+        border: solid 1px $primary-gray;
+        width: 13.8rem;
+        height: 2.5rem;
+      }
+      .nameNum{
+        width: 100%;
+      }
+      .dateCvc {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        gap: 20px;
+        label {
+          display: flex;
+          flex-direction: column;
+          #dateCont {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            .date {
+              width: 4rem;
+              height: 2.5rem;
+            }
+          }
+        }
+        .cvc {
+          width: 11rem;
+          height: 2.5rem;
+        }
       }
     }
   }

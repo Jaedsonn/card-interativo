@@ -20,13 +20,17 @@ body #corpo2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 body #corpo2 form {
-  width: 50%;
+  width: 35%;
   height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
+  align-items: flex-start;
+  justify-content: space-evenly;
   flex-direction: column;
   background-color: aqua;
   font-family: "Space Grotesk", sans-serif;
@@ -40,4 +44,37 @@ body #corpo2 form .campos {
   color: #000;
   font-size: 18px;
   color: hsl(270, 3%, 87%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid 1px hsl(270, 3%, 87%);
+  width: 13.8rem;
+  height: 2.5rem;
+}
+body #corpo2 form .nameNum {
+  width: 100%;
+}
+body #corpo2 form .dateCvc {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  gap: 20px;
+}
+body #corpo2 form .dateCvc label {
+  display: flex;
+  flex-direction: column;
+}
+body #corpo2 form .dateCvc label #dateCont {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+body #corpo2 form .dateCvc label #dateCont .date {
+  width: 4rem;
+  height: 2.5rem;
+}
+body #corpo2 form .dateCvc .cvc {
+  width: 11rem;
+  height: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
