@@ -12,40 +12,133 @@ body #corpo1 {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url("/Front-End-mentor/Desafio_02/interactive-card-details-form-main/images/bg-main-desktop.png");
+  background-size: cover;
+  border-radius: 0px;
+  gap: 45px;
+  position: relative;
 }
-body #corpo1 #backgrond_img {
-  width: 35rem;
-  height: 100%;
-  z-index: 0;
+body #corpo1 #background_img {
+  width: 100%;
+}
+body #corpo1 #front_card {
   position: absolute;
-}
-body #corpo1 .images_section {
-  width: 50rem;
-  height: 90%;
+  margin-left: 100px;
+  width: 448px;
+  height: 246px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  align-items: flex-start;
   flex-direction: column;
+  background-image: url("/Front-End-mentor/Desafio_02/interactive-card-details-form-main/images/bg-card-front.png");
+  background-repeat: none;
+  bottom: 53%;
+  left: 20%;
+  gap: 10px;
+}
+body #corpo1 #front_card img {
+  margin-left: 8%;
+  margin-top: 20px;
+}
+body #corpo1 #front_card #number-cont {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  border-radius: 8px;
+  align-items: flex-end;
+  justify-content: center;
 }
-body #corpo1 .images_section #front {
-  height: 300px;
+body #corpo1 #front_card #number-cont #inNumber {
+  width: 365px;
+  height: 32px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+  background-color: transparent;
+  font-size: 32px;
+  color: #fff;
 }
-body #corpo1 .images_section #front img {
-  z-index: 1;
+body #corpo1 #front_card #front-bottom {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 44px;
+}
+body #corpo1 #front_card #front-bottom #inData {
+  height: 20px;
+  font-size: 18px;
+  width: 60px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+body #corpo1 #front_card #front-bottom #inNome {
+  height: 20px;
+  font-size: 18px;
+  width: auto;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: flex-start;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+}
+body #corpo1 #back_card {
   position: absolute;
-  right: 58rem;
-  top: 5.2rem;
+  width: 448px;
+  height: 246px;
+  background-image: url("/Front-End-mentor/Desafio_02/interactive-card-details-form-main/images/bg-card-back.png");
+  background-repeat: none;
+  top: 53%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
-body #corpo1 .images_section #back {
-  height: 300px;
+body #corpo1 #back_card #card-cvc {
+  height: 100%;
+  width: 78%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: flex-end;
 }
-body #corpo1 .images_section #back img {
-  z-index: 1;
-  position: absolute;
-  bottom: 5rem;
-  left: 16rem;
+body #corpo1 #back_card #card-cvc #cvc {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 14px;
+  color: #fff;
+  width: 34px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
 }
 body #corpo2 {
   width: 65%;
