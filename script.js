@@ -1,8 +1,31 @@
 const frm = document.querySelector("form")
 
+
 const frmNome = document.querySelector("#formNome")
 const cardNome = document.querySelector("#inNome") 
 
+const frmNumber = document.querySelector("#cardNumber")
+const cardNum = document.querySelector("#inNumber")
+
+const formMes = document.querySelector("#mes")
+const cardMes = document.querySelector("#mm")
+
+const cardYear = document.querySelector("#yy")
+const formYear = document.querySelector("#year")
+
+const cardCvc = document.querySelector("#cvc")
+const formCvc = document.querySelector("#formCVC")
+
+frm.addEventListener("submit", (e) =>{
+    e.preventDefault()
+    const mes = frm.mes.value
+    if(mes.length == 0){
+         frm.mes.style.border = "solid 1px red" 
+
+    }
+})
+
+//Evento no campo do nome
 frmNome.addEventListener("keydown", () =>{
     cardNome.innerHTML = frmNome.value
 })
@@ -10,32 +33,13 @@ frmNome.addEventListener("keydown", () =>{
 frmNome.addEventListener("keyup", () =>{
     cardNome.innerHTML = frmNome.value
 })
-
-const frmNumber = document.querySelector("#cardNumber")
-let cardNum = document.querySelector("#inNumber")
+//Evento no campo do número do cartão
 
 frmNumber.addEventListener("keydown", () =>{
     cardNum.innerHTML = frmNumber.value
 })
 
- frmNumber.addEventListener("keyup", () =>{
-     cardNum.innerHTML = frmNumber.value
-     const inputValue = frmNumber.value.replace(/\s/g, ''); // Remove espaços em branco existentes
-    let formattedValue = '';
-
-    for (let i = 0; i < inputValue.length; i++) {
-        if (i > 0 && i % 4 === 0) {
-            formattedValue += ' '; // Adiciona um espaço a cada quatro caracteres
-        }
-        formattedValue += inputValue[i];
-    }
-
-    cardNum.innerHTML = formattedValue; 
-   
-}) 
-
-const formMes = document.querySelector("#mes")
-const cardMes = document.querySelector("#mm")
+//Evento no campo do mês
 
 formMes.addEventListener("keydown", () =>{
     cardMes.innerHTML = formMes.value
@@ -45,8 +49,7 @@ formMes.addEventListener("keyup", () =>{
     cardMes.innerHTML = formMes.value
 })
 
-const cardYear = document.querySelector("#yy")
-const formYear = document.querySelector("#year")
+//Evento no campo do ano
 
 formYear.addEventListener("keydown", () =>{
     cardYear.innerHTML = formYear.value
@@ -56,8 +59,7 @@ formYear.addEventListener("keyup", () =>{
     cardYear.innerHTML = formYear.value
 })
 
-const cardCvc = document.querySelector("#cvc")
-const formCvc = document.querySelector("#formCVC")
+//Evento no campo do cvc
 
 formCvc.addEventListener("keydown", () =>{
     cardCvc.innerHTML = formCvc.value

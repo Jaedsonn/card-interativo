@@ -1,0 +1,7 @@
+/*Exibe a classe do campo mês quando ele estiver vazio*/
+.mesError{
+    border: solid 1px red;
+    width: 3.4rem;
+    height: 2.5rem;
+    padding: 0 10px;
+}

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="effects.css">
     <script src="script.js" defer></script>
 </head>
 
@@ -17,7 +18,7 @@
         <div id="front_card">
             <img src="interactive-card-details-form-main/images/card-logo.svg" alt="">
             <div id="number-cont">
-                <p id="inNumber" >
+                <p id="inNumber">
             </div>
             <div id="front-bottom">
                 <p id="inNome"></p>
@@ -47,10 +48,15 @@
             <div class="dateCvc">
                 <label for="date">EXP.DATE (MM/YY)
                     <div id="dateCont">
-                        <input type="number" name="" class="date campos" placeholder="MM" maxlength="2" max="12"
-                            min="01" id="mes">
-                        <input type="number" name="" class="date campos" placeholder="YY" maxlength="2" max="99"
-                            min="01" id="year">
+                        
+                            <input type="number" name="mês" class="date campos" placeholder="MM" maxlength="2" max="12"
+                                min="01" id="mes">
+                                
+                        
+                        
+                            <input type="number" name="" class="date campos" placeholder="YY" maxlength="2" max="99"
+                                min="01" id="year">
+                        
                     </div>
                 </label>
                 <label for="cvc">CVC

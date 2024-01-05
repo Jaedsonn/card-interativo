@@ -207,6 +207,13 @@ body #corpo2 form .dateCvc label #dateCont {
   display: flex;
   gap: 10px;
 }
+body #corpo2 form .dateCvc label #dateCont .contDate {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: red;
+  gap: 5px;
+}
 body #corpo2 form .dateCvc label #dateCont .date {
   width: 3.4rem;
   height: 2.5rem;
