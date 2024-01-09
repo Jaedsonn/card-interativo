@@ -195,8 +195,23 @@ body {
 
           #dateCont {
             width: auto;
+            height: 80px;
             display: flex;
             gap: 10px;
+            .alertJs{
+              height: 80px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 5px;
+              label{
+                height: auto;
+                width: auto;
+              }
+            }
+        /*     #mes{
+              transition: all 300ms;
+            } */
 
             .contDate {
               display: flex;

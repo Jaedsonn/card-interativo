@@ -16,12 +16,13 @@ const formYear = document.querySelector("#year")
 const cardCvc = document.querySelector("#cvc")
 const formCvc = document.querySelector("#formCVC")
 
+const alerta = document.querySelector("#alert")
 frm.addEventListener("submit", (e) =>{
     e.preventDefault()
     const mes = frm.mes.value
     if(mes.length == 0){
          frm.mes.style.border = "solid 1px red" 
-
+        alerta.innerHTML = "Não tem nada"
     }
 })
 

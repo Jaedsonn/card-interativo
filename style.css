@@ -204,8 +204,23 @@ body #corpo2 form .dateCvc label {
 }
 body #corpo2 form .dateCvc label #dateCont {
   width: auto;
+  height: 80px;
   display: flex;
   gap: 10px;
+  /*     #mes{
+        transition: all 300ms;
+      } */
+}
+body #corpo2 form .dateCvc label #dateCont .alertJs {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+body #corpo2 form .dateCvc label #dateCont .alertJs label {
+  height: auto;
+  width: auto;
 }
 body #corpo2 form .dateCvc label #dateCont .contDate {
   display: flex;
