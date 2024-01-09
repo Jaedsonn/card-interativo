@@ -52,19 +52,24 @@
 
                             <input type="number" name="mês" class="date campos" placeholder="MM" maxlength="2" max="12"
                                 min="01" id="mes">
-                            <label for="" id="alert">&nbsp;</label>
+                            <label for="" class="alert">&nbsp;</label>
                         </div>
                         <div class="alertJs">
                             <input type="number" name="" class="date campos" placeholder="YY" maxlength="2" max="99"
                                 min="01" id="year">
-                            <label for="" id="alert">&nbsp;</label>
+                            <label for="" class="alert">&nbsp;</label>
                         </div>
 
                     </div>
                 </label>
-                <label for="cvc">CVC
-                    <input type="number" name="cvc" class="cvc campos" placeholder="e.g.124" id="formCVC">
-                </label>
+                <div id="contCvc">CVC
+
+                    <div class="alertJs">
+                        <input type="number" name="cvc" class="cvc campos" placeholder="e.g.124" id="formCVC">
+                        <label for="" class="alert">&nbsp;</label>
+                    </div>
+
+                </div>
             </div>
             <button class="campos btn">Confirm</button>
 

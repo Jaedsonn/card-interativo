@@ -208,8 +208,8 @@ body #corpo2 form .dateCvc label #dateCont {
   display: flex;
   gap: 10px;
   /*     #mes{
-        transition: all 300ms;
-      } */
+    transition: all 300ms;
+  } */
 }
 body #corpo2 form .dateCvc label #dateCont .alertJs {
   height: 80px;
@@ -218,9 +218,11 @@ body #corpo2 form .dateCvc label #dateCont .alertJs {
   justify-content: center;
   gap: 5px;
 }
-body #corpo2 form .dateCvc label #dateCont .alertJs label {
+body #corpo2 form .dateCvc label #dateCont .alertJs .alert {
   height: auto;
   width: auto;
+  font-size: 10px;
+  color: red;
 }
 body #corpo2 form .dateCvc label #dateCont .contDate {
   display: flex;
@@ -233,6 +235,28 @@ body #corpo2 form .dateCvc label #dateCont .date {
   width: 3.4rem;
   height: 2.5rem;
   padding: 0 10px;
+}
+body #corpo2 form .dateCvc #contCvc {
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body #corpo2 form .dateCvc #contCvc .alertJs {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+body #corpo2 form .dateCvc #contCvc .alertJs label {
+  height: auto;
+}
+body #corpo2 form .dateCvc #contCvc .alertJs .alert {
+  height: auto;
+  width: auto;
+  font-size: 10px;
+  color: red;
 }
 body #corpo2 form .dateCvc .cvc {
   width: 12.4rem;

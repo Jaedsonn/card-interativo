@@ -1,8 +1,7 @@
 const frm = document.querySelector("form")
 
-
 const frmNome = document.querySelector("#formNome")
-const cardNome = document.querySelector("#inNome") 
+const cardNome = document.querySelector("#inNome")
 
 const frmNumber = document.querySelector("#cardNumber")
 const cardNum = document.querySelector("#inNumber")
@@ -16,58 +15,61 @@ const formYear = document.querySelector("#year")
 const cardCvc = document.querySelector("#cvc")
 const formCvc = document.querySelector("#formCVC")
 
-const alerta = document.querySelector("#alert")
-frm.addEventListener("submit", (e) =>{
-    e.preventDefault()
-    const mes = frm.mes.value
-    if(mes.length == 0){
-         frm.mes.style.border = "solid 1px red" 
-        alerta.innerHTML = "Não tem nada"
-    }
-})
+
 
 //Evento no campo do nome
-frmNome.addEventListener("keydown", () =>{
+frmNome.addEventListener("keydown", () => {
     cardNome.innerHTML = frmNome.value
 })
 
-frmNome.addEventListener("keyup", () =>{
+frmNome.addEventListener("keyup", () => {
     cardNome.innerHTML = frmNome.value
 })
 //Evento no campo do número do cartão
 
-frmNumber.addEventListener("keydown", () =>{
+frmNumber.addEventListener("keydown", () => {
     cardNum.innerHTML = frmNumber.value
 })
 
 //Evento no campo do mês
 
-formMes.addEventListener("keydown", () =>{
+formMes.addEventListener("keydown", () => {
     cardMes.innerHTML = formMes.value
 })
 
-formMes.addEventListener("keyup", () =>{
+formMes.addEventListener("keyup", () => {
     cardMes.innerHTML = formMes.value
 })
 
 //Evento no campo do ano
 
-formYear.addEventListener("keydown", () =>{
+formYear.addEventListener("keydown", () => {
     cardYear.innerHTML = formYear.value
 })
 
-formYear.addEventListener("keyup", () =>{
+formYear.addEventListener("keyup", () => {
     cardYear.innerHTML = formYear.value
 })
 
 //Evento no campo do cvc
 
-formCvc.addEventListener("keydown", () =>{
+formCvc.addEventListener("keydown", () => {
     cardCvc.innerHTML = formCvc.value
 })
 
-formCvc.addEventListener("keyup", () =>{
+formCvc.addEventListener("keyup", () => {
     cardCvc.innerHTML = formCvc.value
 })
 
-
+//Evemtp de alerta quando o campo está vazio
+const alerta = document.querySelector(".alert")
+frm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    const mes = frm.mes.value
+    const ano = frm.year.value
+    const numSegurança = frm.formCVC.value
+    if (mes.length == 0) {
+        frm.mes.style.border = "solid 1px red"
+        alerta.innerHTML = "Can't be black"
+    }
+})
