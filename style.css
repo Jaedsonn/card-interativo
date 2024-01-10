@@ -151,7 +151,7 @@ body #corpo2 {
 }
 body #corpo2 form {
   width: 40%;
-  height: 60%;
+  height: 52%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,15 +184,37 @@ body #corpo2 form .campos {
   border: solid 1px hsl(270, 3%, 87%);
   width: 100%;
   height: 2.5rem;
+  outline: none;
 }
 body #corpo2 form .nameNum {
   width: 23.7rem;
   padding: 0 10px;
 }
+body #corpo2 form .alertJs {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+body #corpo2 form .alertJs .alertNum {
+  height: auto;
+  height: auto;
+  width: auto;
+  font-size: 10px;
+  color: red;
+}
+body #corpo2 form .alertJs #alertNome {
+  height: auto;
+  height: auto;
+  width: auto;
+  font-size: 10px;
+  color: red;
+}
 body #corpo2 form .dateCvc {
   display: flex;
   width: 100%;
-  height: 70px;
+  height: 90px;
   gap: 1px;
 }
 body #corpo2 form .dateCvc label {
@@ -263,7 +285,6 @@ body #corpo2 form .dateCvc #contCvc .alertJs .alertCvc {
   width: auto;
   font-size: 10px;
   color: red;
-  transition: all 5s;
 }
 body #corpo2 form .dateCvc .cvc {
   width: 12.4rem;

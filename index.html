@@ -34,22 +34,23 @@
     </section>
     <section id="corpo2">
         <form>
-            <label for="nome">
+            <div class="alertJs">
                 CARDHOLDER NAME
                 <input type="text" name="nome" class="campos nameNum" placeholder="e.g.Jane Appleseed" id="formNome">
-            </label>
+                <label for="" id="alertNome">&nbsp;</label>
+            </div>
 
-            <label for="card_number">
+            <div class="alertJs">
                 CARD NUMBER
-                <input type="text" name="card_number" class="campos nameNum" placeholder="e.g. 1234 5678 9123 0000"
+                <input type="number" name="card_number" class="campos nameNum" placeholder="e.g. 1234 5678 9123 0000"
                     id="cardNumber">
-            </label>
+                <label class="alertNum" id="alertaNum">&nbsp;</label>
+            </div>
 
             <div class="dateCvc">
                 <label for="date">EXP.DATE (MM/YY)
                     <div id="dateCont">
                         <div class="alertJs">
-
                             <input type="number" name="mês" class="date campos" placeholder="MM" maxlength="2" max="12"
                                 min="01" id="mes">
                             <label for="" class="alert">&nbsp;</label>
