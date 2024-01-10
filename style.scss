@@ -30,7 +30,7 @@ body {
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
-    background-image: url("/interactive-card-details-form-main/images/bg-main-desktop.png");
+    background-image: url("./interactive-card-details-form-main/images/bg-main-desktop.png");
     background-size: cover;
     border-radius: 0px;
     gap: 45px;
@@ -48,7 +48,7 @@ body {
       @include display($display_config: display);
       align-items: flex-start;
       flex-direction: column;
-      background-image: url("/interactive-card-details-form-main/images/bg-card-front.png");
+      background-image: url("./interactive-card-details-form-main/images/bg-card-front.png");
       background-repeat: none;
       bottom: 53%;
       left: 20%;
@@ -117,7 +117,7 @@ body {
       position: absolute;
       width: 448px;
       height: 246px;
-      background-image: url("/interactive-card-details-form-main/images/bg-card-back.png");
+      background-image: url("./interactive-card-details-form-main/images/bg-card-back.png");
       background-repeat: none;
       top: 53%;
       left: 50%;
