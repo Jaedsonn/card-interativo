@@ -224,6 +224,12 @@ body #corpo2 form .dateCvc label #dateCont .alertJs .alert {
   font-size: 10px;
   color: red;
 }
+body #corpo2 form .dateCvc label #dateCont .alertJs .alertY {
+  height: auto;
+  width: auto;
+  font-size: 10px;
+  color: red;
+}
 body #corpo2 form .dateCvc label #dateCont .contDate {
   display: flex;
   flex-direction: column;
@@ -252,11 +258,12 @@ body #corpo2 form .dateCvc #contCvc .alertJs {
 body #corpo2 form .dateCvc #contCvc .alertJs label {
   height: auto;
 }
-body #corpo2 form .dateCvc #contCvc .alertJs .alert {
+body #corpo2 form .dateCvc #contCvc .alertJs .alertCvc {
   height: auto;
   width: auto;
   font-size: 10px;
   color: red;
+  transition: all 5s;
 }
 body #corpo2 form .dateCvc .cvc {
   width: 12.4rem;

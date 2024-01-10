@@ -63,6 +63,8 @@ formCvc.addEventListener("keyup", () => {
 
 //Evemtp de alerta quando o campo está vazio
 const alerta = document.querySelector(".alert")
+const alertaCvc = document.querySelector(".alertCvc")
+const alertaY = document.querySelector(".alertY")
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
     const mes = frm.mes.value
@@ -71,5 +73,13 @@ frm.addEventListener("submit", (e) => {
     if (mes.length == 0) {
         frm.mes.style.border = "solid 1px red"
         alerta.innerHTML = "Can't be black"
+    }
+    if(numSegurança.length == 0){
+        frm.formCVC.style.border = "solid 1px red"
+        alertaCvc.innerHTML = "Can't be black"
+    }
+    if(ano.length == 0){
+        frm.year.style.border = "solid 1px red"
+        alertaY.innerHTML = "Can't be black"
     }
 })

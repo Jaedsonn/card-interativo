@@ -212,6 +212,12 @@ body {
                 font-size: 10px;
                 color: red;
               }
+              .alertY{
+                height: auto;
+                width: auto;
+                font-size: 10px;
+                color: red;
+              }
             }
 
             /*     #mes{
@@ -249,11 +255,12 @@ body {
             label{
               height: auto;
             }
-            .alert {
+            .alertCvc {
               height: auto;
               width: auto;
               font-size: 10px;
               color: red;
+              transition: all 5s;
             }
           }
 
