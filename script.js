@@ -85,6 +85,7 @@ frm.addEventListener("submit", (e) => {
     if (numSegurança.length == 0) {
         frm.formCVC.style.border = "solid 1px red"
         alertaCvc.innerHTML = "Can't be blank"
+        
     } else {
         frm.formCVC.style.border = ""
         alertaCvc.innerHTML = "&nbsp;"
@@ -94,6 +95,7 @@ frm.addEventListener("submit", (e) => {
     if (ano.length == 0) {
         frm.year.style.border = "solid 1px red"
         alertaY.innerHTML = "Can't be blank"
+        
     } else {
         frm.year.style.border = ""
         alertaY.innerHTML = "&nbsp;"
@@ -102,6 +104,7 @@ frm.addEventListener("submit", (e) => {
     if (numCard.length == 0) {
         frm.cardNumber.style.border = "solid 1px red"
         alertaNum.innerHTML = "Wrong format, number only"
+        
     } else {
         frm.cardNumber.style.border = ""
         alertaNum.innerHTML = "&nbsp;"
@@ -110,8 +113,11 @@ frm.addEventListener("submit", (e) => {
     if (nome.length == 0) {
         frm.formNome.style.border = "solid 1px red"
         alertaName.innerHTML = "Can't be blank"
+        
     } else {
         frm.formNome.style.border = ""
         alertaName.innerHTML = "&nbsp;"
     }
+
+    
 })
