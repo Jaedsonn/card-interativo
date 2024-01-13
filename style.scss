@@ -24,8 +24,8 @@ body {
   display: flex;
 
   #corpo1 {
-    width: 35%;
-    height: 100%;
+    width: 538px;
+    height: 100vh;
     @include display($display_config: display);
     flex-direction: row;
     align-items: flex-end;
@@ -60,7 +60,7 @@ body {
       }
 
       #number-cont {
-        height: 50%;
+        height: 94px;
         width: 100%;
         @include display($display_config: display);
         align-items: flex-end;
@@ -78,7 +78,7 @@ body {
       }
 
       #front-bottom {
-        height: 35%;
+        height: 76px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -125,7 +125,7 @@ body {
 
       #card-cvc {
         height: 100%;
-        width: 78%;
+        width: 349px;
         @include display($display_config: display);
         justify-content: flex-end;
 

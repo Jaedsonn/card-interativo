@@ -1,0 +1,43 @@
+@media only screen and (max-width:1272px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body #corpo1 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content:flex-end;
+    }
+
+    body #corpo1 #front_card {
+        z-index: 2;
+        margin: auto;
+        width: 360px;
+        height: 190px;
+        background-size: cover;
+        position:fixed;
+        bottom: 23.3rem;
+        right: 18.5rem;
+    }
+
+    body #corpo1 #back_card {
+        z-index: 1;
+        width: 360px;
+        height: 190px;
+        background-size: cover;
+        position:initial;
+        margin-left:100px ;
+    }
+
+    body #corpo2 form {
+        height: 350px;
+        width: 400px;
+        justify-content: flex-end;
+    }
+}
