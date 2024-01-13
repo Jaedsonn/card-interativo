@@ -21,9 +21,6 @@ body #corpo1 {
   gap: 45px;
   position: relative;
 }
-body #corpo1 #background_img {
-  width: 100%;
-}
 body #corpo1 #front_card {
   position: absolute;
   margin-left: 100px;
