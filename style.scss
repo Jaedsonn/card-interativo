@@ -24,8 +24,7 @@ body {
   display: flex;
 
   #corpo1 {
-    width: 538px;
-    height: 100vh;
+    width: 35%;
     @include display($display_config: display);
     flex-direction: row;
     align-items: flex-end;
@@ -146,7 +145,6 @@ body {
     @include display($display_config: display);
 
     form {
-      width: 362px;
       height: 400px;
       @include display($display_config: display);
       align-items: flex-start;
@@ -159,7 +157,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 65px;
+
       }
 
       .campos {
@@ -179,7 +177,6 @@ body {
       }
 
       .alertJs {
-        height: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -193,7 +190,7 @@ body {
           color: red;
         }
 
-        #alertNome{
+        #alertNome {
           height: auto;
           height: auto;
           width: auto;
@@ -306,4 +303,54 @@ body {
       }
     }
   }
+}
+
+@media screen and (max-width:1309px) {
+  body{
+   display: flex;
+   flex-direction:column ;
+   align-items: center;
+   justify-content: space-between;
+  }
+  body #corpo1 {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  body  #corpo1 #front_card{
+    width: 350px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    top: 48%;
+    margin: 0 auto;
+    left: 0;
+    right: 10%;
+  }
+  body  #corpo1 #back_card{
+    width: 350px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    position: initial;
+    
+  }
+
+  body #corpo2{
+    width: 100%;
+    height: fit-content;
+  }
+
+  body #corpo2 form{
+    height: fit-content;
+    
+  }
+
 }
